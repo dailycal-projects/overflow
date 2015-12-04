@@ -1,0 +1,68 @@
+.wrapper {
+    @include outer-container;
+    padding: $spacing-unit 20px;
+}
+
+
+/**
+ * Site header
+ */
+
+.site-header {
+    @include media($on-laptop) {
+        margin-bottom: $spacing-unit;
+        height: 50px;
+    }
+}
+
+.site-title {
+    font-family: $serif;
+    font-size: 30px;
+    font-weight: 300;
+    line-height: 56px;
+    letter-spacing: -1px;
+    float: left;
+
+    &:hover {
+        text-decoration: none;
+        color: $brand-color-light;
+    }
+
+    @include media($on-palm) {
+        font-size: 40px;
+    }
+
+    @include media($on-laptop) {
+        font-size: 60px;
+    }
+}
+
+.site-description {
+    clear: both;
+
+    @include media($on-laptop) {
+        clear: none;
+        margin: 12px 0 0 50px;
+        max-width: 400px;
+        float: left;
+    }
+}
+
+
+/**
+ * Page content
+ */
+.page-content {
+    padding: $spacing-unit 0;
+}
+
+.page-heading {
+    font-size: 20px;
+}
+
+.post-meta {
+    font-family: $sans-serif;
+    text-transform: uppercase;
+    font-size: $small-font-size;
+    color: $grey-color;
+}
