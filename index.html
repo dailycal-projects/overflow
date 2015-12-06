@@ -22,7 +22,7 @@ layout: default
     </h2>
     <p>{{ post.short_description }}</p>
     {% if post.post_title %}
-    <p><b>Related:</b> <a href="{{ post.url }}">{{ post.post_title }}</a></p>
+    <p><b>Related:</b> <a href="{{site.baseurl}}{{ post.url }}">{{ post.post_title }}</a></p>
     {% endif %}
   </div>
   </a>

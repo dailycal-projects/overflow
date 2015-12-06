@@ -1,10 +1,5 @@
 .post-list {
 	clear: both;
-	margin-top: -3rem;
-
-	@include media($on-laptop) {
-		margin-top: $spacing-unit;
-	}
 
 	.post {
 		margin: $spacing-unit auto;
@@ -40,7 +35,7 @@
 
 		.post-info {
 			@include span-columns(12);
-			margin-top: 10px;
+			margin: 10px 0 40px 0;
 
 			@include media($on-laptop) {
 				@include span-columns(4);

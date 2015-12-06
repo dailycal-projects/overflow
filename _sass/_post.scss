@@ -1,6 +1,10 @@
 .post {
 	clear: both;
-	margin-top: 4rem;
+	margin-top: 2rem;
+
+	@include media($on-laptop) {
+		margin-top: 4rem;
+	}
 
 	.post-header {
 	    margin-bottom: 20px;

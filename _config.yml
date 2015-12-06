@@ -2,10 +2,10 @@
 title: OVERFLOW
 description: > # this means to ignore newlines until "baseurl:"
   <a href="http://www.dailycal.org/">The Daily Californian's</a> projects team makes news apps, interactive
-  features, data stories and newsroom tools.
-baseurl: "" # the subpath of your site, e.g. /blog
+  features, data stories and newsroom tools. <a href="about">More <i class="fa fa-angle-double-right"></i></a>
+baseurl: "/overflow" # the subpath of your site, e.g. /blog
 url: "http://projects.dailycal.org" # the base hostname & protocol for your site
 
 # Build settings
 markdown: kramdown
-permalink: /:title/
+permalink: /:year/:month/:title/

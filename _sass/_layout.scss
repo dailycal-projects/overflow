@@ -1,6 +1,10 @@
 .wrapper {
     @include outer-container;
-    padding: $spacing-unit 20px;
+    padding: $spacing-unit/2 10px;
+
+    @include media($on-laptop) {
+        padding: $spacing-unit 20px;
+    }
 }
 
 
@@ -21,7 +25,8 @@
     font-weight: 300;
     line-height: 56px;
     letter-spacing: -1px;
-    float: left;
+    
+    text-align: center;
 
     &:hover {
         text-decoration: none;
@@ -33,17 +38,20 @@
     }
 
     @include media($on-laptop) {
+        float: left;
+        text-align: left;
         font-size: 60px;
     }
 }
 
 .site-description {
     clear: both;
+    @include clearfix;
 
     @include media($on-laptop) {
         clear: none;
         margin: 12px 0 0 50px;
-        max-width: 400px;
+        max-width: 450px;
         float: left;
     }
 }
