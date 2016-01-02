@@ -19,29 +19,9 @@
     }
 }
 
-.site-title {
-    font-family: $serif;
-    font-size: 30px;
-    font-weight: 300;
-    line-height: 56px;
-    letter-spacing: -1px;
-    
-    text-align: center;
-
-    &:hover {
-        text-decoration: none;
-        color: $brand-color-light;
-    }
-
-    @include media($on-palm) {
-        font-size: 40px;
-    }
-
-    @include media($on-laptop) {
-        float: left;
-        text-align: left;
-        font-size: 60px;
-    }
+.site-title img {
+    width: 300px;
+    float: left;
 }
 
 .site-description {
@@ -50,7 +30,7 @@
 
     @include media($on-laptop) {
         clear: none;
-        margin: 12px 0 0 50px;
+        margin: 16px 0 0 50px;
         max-width: 450px;
         float: left;
     }
