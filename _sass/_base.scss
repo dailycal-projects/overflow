@@ -158,3 +158,14 @@ pre {
         clear: both;
     }
 }
+
+/**
+ * Horizontal rules
+ */
+
+ hr {
+    background-color: $brand-color;
+    color: $brand-color;
+    border: 0 none;
+    height: 1px;
+ }
