@@ -1,36 +1,69 @@
 ---
 layout: default
 ---
-
-<div class="post-list">
+<div class="page">
+<div class="post-list seven columns">
 
 {% for post in site.posts %}
+{% if post.type contains "project" %}
 
-<hr>
-
-<section class="post {% cycle 'right', 'left' %}">
+<section class="post">
+  <h2 class="post-title">
+    <a href="{{ post.project_url }}">{{ post.project_title }}</a>
+  </h2>
+  <p class="post-author">{{ post.author }}</p>
   <a href="{{ post.project_url }}">
     <div class="post-image">
       <img src="assets/{{ post.image }}">
     </div>
   </a>
-
-  <div class="post-info">
-    <span class="post-meta">{{ post.date | date: "%B %-d, %Y" }}</span>
-    <h2>
-      <a class="post-link" href="{{ post.project_url }}">{{ post.project_title }}</a>
-    </h2>
-    <p>{{ post.short_description }}</p>
+  <p class="post-desc">
+    <b><span class="post-date" style="font-color: blue">{{ post.date | date: "%m.%-d.%Y" }}</span> |</b>
+    {{ post.short_description }}
     {% if post.post_title %}
-    <p><b>Related:</b> <a href="{{site.baseurl}}{{ post.url }}">{{ post.post_title }}</a></p>
-    {% endif %}
-  </div>
-  </a>
-
+    <b>Related:</b>
+    <a href="{{site.baseurl}}{{ post.url }}">{{ post.post_title }}</a>
+  </p>
+  {% endif %}
 </section>
 
-
-
+{% endif %}
 {% endfor %}
+</div>
+
+<div class="blog-list five columns">
+
+{% for post in site.posts %}
+{% if post.type contains "blog" %}
+
+<section class="blog">
+  <h2 class="blog-title">
+    <a href="{{ post.project_url }}">{{ post.project_title }}</a>
+  </h2>
+
+  <div class="row">
+    <div class="six columns">
+      <a href="{{ post.project_url }}">
+        <div class="blog-image" background="assets/{{ post.image }}">
+          <img src="assets/{{ post.image }}">
+        </div>
+      </a>
+    </div>
+    <div class="six columns">
+      <p class="blog-desc">
+        <b><span class="blog-date">{{ post.date | date: "%m.%-d.%Y" }}</span></b>
+        {{ post.short_description }}
+        {% if post.post_title %}
+        <b>Related:</b>
+        <a href="{{site.baseurl}}{{ post.url }}">{{ post.post_title }}</a>
+      </p>
+    </div>
+  </div>
+  {% endif %}
+</section>
+
+{% endif %}
+{% endfor %}
+</div>
 
 </div>

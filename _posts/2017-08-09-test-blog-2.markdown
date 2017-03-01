@@ -1,13 +1,13 @@
 ---
 layout: post
-project_title:  "The Public Trust"
+project_title:  "Blog post 2"
 post_title: "Why we chose audio"
 date:   2015-11-11 17:21:30 -0800
 project_url: http://projects.dailycal.org/public-trust/
-short_description: In an era of declining state funding, what makes UC Berkeley a public institution?
+short_description:  Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
 author: Sahil Chinoy and Chloee Weiner
-image: public-trust.jpg
-type: project
+image: blog-2.jpg
+type: blog
 ---
 In the course of our day-to-day coverage of the university, we write a lot of stories about the same handful of themes: tuition and fees, out-of-state enrollment, access and equity, and private funding, among others. These stories tend to be narrow in scope, as it’s difficult to connect the latest policy or tuition hike to the bigger picture with a 5 p.m. deadline. That means the larger story — what it means to be a public university in the face of these trends — goes untold.
 

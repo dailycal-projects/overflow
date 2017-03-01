@@ -5,4 +5,6 @@ date:   2015-12-11 00:00:00 -0800
 project_url: http://projects.dailycal.org/grades/
 short_description: Do perceptions about the most difficult departments match reality? We looked through 1.5 million grades to find out.
 image: grades.png
+author: Sahil Chinoy and Ronald Kwan
+type: project
 ---

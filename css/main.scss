@@ -49,5 +49,54 @@ $on-laptop:        800px;
         "layout",
         "syntax-highlighting",
         "post-list",
-        "post"
+        "post",
+        "grid"
 ;
+
+// Header
+.header {
+  margin-top: 42px;
+  h1 {
+    font-size: 5em;
+    font-weight: bold;
+    display:inline-block;
+    margin-bottom: -16px;
+    margin-right: 20px;
+    color: $brand-color;
+    a:link {
+        text-decoration: none;
+    }
+    a:visited {
+        text-decoration: none;
+    }
+    a:hover {
+        text-decoration: none;
+    }
+    a:active {
+        text-decoration: none;
+    }
+  }
+  p {
+    display:inline-block;
+    margin-bottom: 6px;
+  }
+  .external {
+    margin-top: 20px;
+    float:right;
+  }
+}
+
+@media (max-width: 550px) {
+  .header {
+    margin-top: 16px;
+    .external {
+      margin-top: 0;
+      display:inline-block;
+    }
+  }
+}
+
+.page {
+  width: 95%;
+  margin:auto;
+}
