@@ -23,6 +23,7 @@
 			font-size: 2em;
 			font-color: $brand-color;
 			font-family: $sans-serif;
+			font-weight: bold;
 		}
 		.post-image {
 			height: 260px;
@@ -35,6 +36,7 @@
 		}
 		.post-desc {
 			color: $grey-color-dark;
+			margin-top: 8px;
 		}
 		.post-date {
 			color: $brand-color;
@@ -74,6 +76,7 @@
 			font-size: 1.5em;
 			font-color: $brand-color;
 			font-family: $sans-serif;
+			font-weight: bold;
 		}
 		.blog-desc {
 			color: $grey-color-dark;

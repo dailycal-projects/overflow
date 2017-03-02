@@ -3,10 +3,20 @@
 ---
 @charset "utf-8";
 @import url('https://fonts.googleapis.com/css?family=Marvel');
+@font-face {
+    font-family: BentonSans;
+    src: url("../fonts/BentonSans-Book.otf") format("opentype");
+}
+
+@font-face {
+    font-family: BentonSans;
+    font-weight: bold;
+    src: url("../fonts/BentonSans-Medium.otf") format("opentype");
+}
 
 // Our variables
 $serif: "Marvel", Marvel, serif;
-$sans-serif: "Helvetica", Helvetica, Arial, sans-serif;
+$sans-serif: "BentonSans", BentonSans, Arial, sans-serif;
 $base-font-size:   14px;
 $base-font-weight: 400;
 $small-font-size:  $base-font-size * 0.9;
