@@ -1,6 +1,10 @@
 .post-list {
-	clear: both;
-
+		margin-top: 32px;
+		margin-bottom: 32px;
+	@include media($on-laptop) {
+		padding-right: 5%;
+		border-right: solid $grey-color-light 0.5px;
+	}
 	.post {
 		margin: $spacing-unit auto;
 
@@ -11,63 +15,78 @@
 			padding: 0;
 			float: none;
 			clear: both;
-			height: 400px;
+
 		}
 
+		h2 {
+			margin-bottom: 4px;
+			font-size: 2.5em;
+			font-color: $brand-color;
+			font-family: $sans-serif;
+			font-weight: bold;
+		}
 		.post-image {
-			@include span-columns(12);
-			
-			@include media($on-laptop) {
-				@include span-columns(8);
-			}
-
-			height: 100%;
+			height: 260px;
 			overflow: hidden;
 		}
+		.post-author {
+			font-size: 1em;
+			font-weight: bold;
+			margin-bottom: 4px;
+			color: $grey-color-dark;
+		}
+		.post-desc {
+			color: $grey-color-dark;
+			margin-top: 8px;
+		}
+		.post-date {
+			color: $brand-color;
+		}
+	}
+	.post:first-child {
+		margin-top: 0px;
+	}
+}
 
-		&.right {
-			.post-image {
-				@include media($on-laptop) {
-					@include shift(4);
-				}
-			}
+.blog-list {
+	margin-top: 32px;
+	.blog {
+		margin: $spacing-unit auto;
+		color: gray;
+
+		@include media($on-laptop) {
+			position: relative;
+			width: auto;
+			margin: $spacing-unit auto;
+			padding: 0;
+			float: none;
+			clear: both;
+			min-height: 180px;
 		}
 
-		.post-info {
-			@include span-columns(12);
-			margin: 10px 0 40px 0;
-
+		.blog-image {
+			width: auto;
+			height: 100%;
 			@include media($on-laptop) {
-				@include span-columns(4);
-				margin: 0;
-				position: absolute;
-				top: 50%;
-				text-align: center;
-				transform-style: preserve-3d;
-				transform: translateY(-50%);
-				float: left;
-				clear: none;
-			}
-
-			h2 {
-				margin-bottom: 2px;
-				font-weight: bold;
-				font-family: $serif;
-			}
-
-			p {
-				margin-bottom: 2px;
-			}
-
-		}
-
-		&.left {
-			.post-info {
-				@include media($on-laptop) {
-					@include shift(8);
-				}
-				
+				margin-bottom: 24px;
 			}
 		}
+
+		h2 {
+			margin-bottom: 4px;
+			font-size: 1.7em;
+			font-color: $brand-color;
+			font-family: $sans-serif;
+			font-weight: bold;
+		}
+		.blog-desc {
+			color: $grey-color-dark;
+		}
+		.blog-date {
+			color: $brand-color;
+		}
+	}
+	.blog:first-child {
+		margin-top: 0;
 	}
 }

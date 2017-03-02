@@ -6,7 +6,8 @@ date:   2015-11-23 00:00:00 -0800
 project_url: http://projects.dailycal.org/crime/
 short_description: We analyzed five years of police reports to see where and when crime occurs most often.
 image: crime.jpg
-author: Sahil Chinoy
+author: Sahil Chinoy and Thomas Kim
+type: project
 ---
 
 The Daily Californian’s new crime map might not look complex, but there’s a lot going on behind the scenes. In creating it, we’ve built the beginnings of a framework for fast filtering in web maps using only static files — a framework we want to refine for our future geospatial visualizations.

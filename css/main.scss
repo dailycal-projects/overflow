@@ -2,10 +2,21 @@
 # Only the main Sass file needs front matter (the dashes are enough)
 ---
 @charset "utf-8";
+@import url('https://fonts.googleapis.com/css?family=Marvel');
+@font-face {
+    font-family: BentonSans;
+    src: url("../fonts/BentonSans-Book.otf") format("opentype");
+}
+
+@font-face {
+    font-family: BentonSans;
+    font-weight: bold;
+    src: url("../fonts/BentonSans-Medium.otf") format("opentype");
+}
 
 // Our variables
-$serif: "Georgia", Georgia, serif;
-$sans-serif: "Helvetica", Helvetica, Arial, sans-serif;
+$serif: "Marvel", Marvel, serif;
+$sans-serif: "BentonSans", BentonSans, Arial, sans-serif;
 $base-font-size:   14px;
 $base-font-weight: 400;
 $small-font-size:  $base-font-size * 0.9;
@@ -15,11 +26,11 @@ $spacing-unit:     40px;
 
 $text-color:       #111;
 $background-color: #fdfdfd;
-$brand-color:      #393966;
+$brand-color:      #2db188;
 $brand-color-light: lighten($brand-color, 10%);
 
 $grey-color:       #969696;
-$grey-color-light: lighten($grey-color, 40%);
+$grey-color-light: lighten($grey-color, 20%);
 $grey-color-dark:  darken($grey-color, 25%);
 
 // Width of the content area
@@ -49,5 +60,58 @@ $on-laptop:        800px;
         "layout",
         "syntax-highlighting",
         "post-list",
-        "post"
+        "post",
+        "grid"
 ;
+
+// Header
+.header {
+  margin-top: 42px;
+  h1 {
+    font-size: 5em;
+    font-weight: bold;
+    display:inline-block;
+    margin-bottom: -16px;
+    margin-right: 20px;
+    color: $brand-color;
+    a:link {
+        text-decoration: none;
+    }
+    a:visited {
+        text-decoration: none;
+    }
+    a:hover {
+        text-decoration: none;
+    }
+    a:active {
+        text-decoration: none;
+    }
+  }
+  p {
+    display:inline-block;
+    margin-bottom: 6px;
+    color:$grey-color;
+  }
+  .external {
+    margin-top: 20px;
+    float:right;
+    a {
+      color: $grey-color;
+    }
+  }
+}
+
+@media (max-width: 550px) {
+  .header {
+    margin-top: 16px;
+    .external {
+      margin-top: 0;
+      display:inline-block;
+    }
+  }
+}
+
+.page {
+  width: 95%;
+  margin:auto;
+}
