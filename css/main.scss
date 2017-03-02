@@ -2,9 +2,10 @@
 # Only the main Sass file needs front matter (the dashes are enough)
 ---
 @charset "utf-8";
+@import url('https://fonts.googleapis.com/css?family=Marvel');
 
 // Our variables
-$serif: "Georgia", Georgia, serif;
+$serif: "Marvel", Marvel, serif;
 $sans-serif: "Helvetica", Helvetica, Arial, sans-serif;
 $base-font-size:   14px;
 $base-font-weight: 400;
@@ -15,11 +16,11 @@ $spacing-unit:     40px;
 
 $text-color:       #111;
 $background-color: #fdfdfd;
-$brand-color:      #393966;
+$brand-color:      #2db188;
 $brand-color-light: lighten($brand-color, 10%);
 
 $grey-color:       #969696;
-$grey-color-light: lighten($grey-color, 40%);
+$grey-color-light: lighten($grey-color, 20%);
 $grey-color-dark:  darken($grey-color, 25%);
 
 // Width of the content area
@@ -79,10 +80,14 @@ $on-laptop:        800px;
   p {
     display:inline-block;
     margin-bottom: 6px;
+    color:$grey-color;
   }
   .external {
     margin-top: 20px;
     float:right;
+    a {
+      color: $grey-color;
+    }
   }
 }
 

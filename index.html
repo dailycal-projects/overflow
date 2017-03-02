@@ -2,7 +2,7 @@
 layout: default
 ---
 <div class="page">
-<div class="post-list seven columns">
+<div class="post-list seven columns"> <!-- change back to seven to add blog -->
 
 {% for post in site.posts %}
 {% if post.type contains "project" %}
@@ -51,7 +51,7 @@ layout: default
     </div>
     <div class="six columns">
       <p class="blog-desc">
-        <b><span class="blog-date">{{ post.date | date: "%m.%-d.%Y" }}</span></b>
+        <b><span class="blog-date">{{ post.date | date: "%m.%-d.%Y" }}</span> |</b>
         {{ post.short_description }}
         {% if post.post_title %}
         <b>Related:</b>

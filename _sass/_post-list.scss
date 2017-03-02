@@ -3,7 +3,7 @@
 		margin-bottom: 32px;
 	@include media($on-laptop) {
 		padding-right: 5%;
-		border-right: solid lightgray 0.5px;
+		border-right: solid $grey-color-light 0.5px;
 	}
 	.post {
 		margin: $spacing-unit auto;
@@ -24,12 +24,18 @@
 			font-color: $brand-color;
 			font-family: $sans-serif;
 		}
-
+		.post-image {
+			height: 260px;
+			overflow: hidden;
+		}
 		.post-author {
 			font-size: 1em;
 			margin-bottom: 4px;
+			color: $grey-color-dark;
 		}
-
+		.post-desc {
+			color: $grey-color-dark;
+		}
 		.post-date {
 			color: $brand-color;
 		}
@@ -69,7 +75,9 @@
 			font-color: $brand-color;
 			font-family: $sans-serif;
 		}
-
+		.blog-desc {
+			color: $grey-color-dark;
+		}
 		.blog-date {
 			color: $brand-color;
 		}
