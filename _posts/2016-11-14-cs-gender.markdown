@@ -1,0 +1,10 @@
+---
+layout: post
+project_title:  "What Does a Hacker Look Like?"
+date:   2016-11-14 00:00:00 -0800
+project_url: http://projects.dailycal.org/cs-gender/
+short_description: We created a seating chart for one of the large lecture halls on campus, Wheeler Auditorium, and imagined what it might look like if everyone sitting down were, say, an Electrical Engineering and Computer Science graduate or an English graduate..
+image: cs-gender.png
+author: Sahil Chinoy and Chloee Weiner
+type: project
+---
